@@ -12,3 +12,6 @@
 >> choco install eksctl -y
 >> eksctl version
 
+4. If any secrets/confidential files where accidentally pushed to GitHub, rever the changes with:
+>> pip install git-filter-repo (CMD)
+>> python -m git_filter_repo --path secrets.txt --invert-paths --force (PowerShell)
