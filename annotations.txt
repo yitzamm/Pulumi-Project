@@ -1,0 +1,13 @@
+1. Install Pulumi
+>> choco install pulumi
+>> pulumi version
+
+2. Install the AWS CLI and PowerShell's helper
+>> choco install awscli -y (CMD admin)
+>> Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1" (PowerShell)
+>> refreshenv
+>> aws --version
+
+3. Install eksctl
+>> choco install eksctl -y
+>> eksctl version
