@@ -1,4 +1,4 @@
-1. Install Pulumi
+1. Install Pulumi (CMD admin)
 >> choco install pulumi
 >> pulumi version
 
@@ -8,10 +8,31 @@
 >> refreshenv
 >> aws --version
 
-3. Install eksctl
+3. Install eksctl (CMD admin)
 >> choco install eksctl -y
 >> eksctl version
 
-4. If any secrets/confidential files where accidentally pushed to GitHub, rever the changes with:
+4. If any secrets/confidential files where accidentally pushed to GitHub, revert the changes by running:
 >> pip install git-filter-repo (CMD)
 >> python -m git_filter_repo --path secrets.txt --invert-paths --force (PowerShell)
+>> git push origin main --force
+
+5. Start a pulumi project
+>> pulumi new aws-javascript
+NOTE: Create the access token from your Pulumi account
+>> Specify the project name, description, stack and region to continue
+
+6. Deploy the created stack
+>> pulumi up
+Verify by running:
+>> pulumi stack output bucketName
+
+7. Create an S3 bucket object (index.html)
+>> pulumi up
+>> aws s3 ls my-bucket-076a6c3
+
+8. Destroy all resources
+>> pulumi destroy
+
+9. Delete the stack
+>> pulumi stack rm dev
