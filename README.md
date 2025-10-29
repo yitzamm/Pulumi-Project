@@ -1,7 +1,9 @@
-# Pulumi + AWS Infrastructure as Code Project
+# Pulumi + AWS IaC Project
 October 28, 2025
 
 <img width="250" height="250" alt="Image" src="https://github.com/user-attachments/assets/03e20b2d-b5e9-4a7e-8287-edb506d2c9ce" />
+
+## Description
 
 This mini-project demonstrates how to provision and manage AWS resources programmatically using Pulumi, an open-source Infrastructure-as-Code (IaC) framework that uses familiar programming languages instead of YAML or JSON. The project covers the complete workflow — from environment setup to resource deployment — using both the Pulumi CLI and AWS CLI.
 
