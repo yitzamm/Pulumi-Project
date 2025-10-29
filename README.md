@@ -16,15 +16,15 @@ This mini-project demonstrates how to provision and manage AWS resources program
 
 ## Implemented Resources
 
-**S3 Bucket –** Provisioned through Pulumi for object storage.
+- **S3 Bucket –** Provisioned through Pulumi for object storage.
 
-**S3 Object –** Uploaded and managed programmatically.
+- **S3 Object –** Uploaded and managed programmatically.
 
-**S3 Website Hosting –** Configured static website hosting directly on the bucket.
+- **S3 Website Hosting –** Configured static website hosting directly on the bucket.
 
-**Bucket Ownership Controls –** Applied best practices for modern S3 ownership and ACL management.
+- **Bucket Ownership Controls –** Applied best practices for modern S3 ownership and ACL management.
 
-**Bucket Policy and Access Controls –** Enabled public read access for static website files (where applicable).
+- **Bucket Policy and Access Controls –** Enabled public read access for static website files (where applicable).
 
 ## Outcome
 
